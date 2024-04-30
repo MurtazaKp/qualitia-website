@@ -1,0 +1,95 @@
+.product_dashboards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  border-bottom: 1px solid var(--primary-medium);
+  padding-bottom: var(--padding-3);
+}
+.product_dashboards:not(:last-child){  
+  margin-bottom: var(--margin-3);
+}
+.product_dashboards p{
+  margin: 0px;
+}
+.product_dashboards_bg {
+  background-color: var(--color-tertiary-bg);  
+}
+.product_team_allocation {
+  position: relative;
+  padding-right: var(--padding-6);
+}
+.product_team_allocation::after {
+  content: "";
+  background-color: var(--secondary);
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  border-radius: 50%;
+  /* margin-top: var(--margin-1); */
+  min-width: 1rem;
+}
+.product_figma_integration {
+  position: relative;
+  /* padding-right: var(--padding-5); */
+}
+.product_figma_integration::after {
+  content: "";
+  background-color: var(--tertiary);
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  border-radius: 50%;
+}
+.product_dashboards_info {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: start; */
+}
+.product_dashboards_title {
+  margin: var(--margin-1) 0;
+  flex: 0 0 25%;
+}
+.product_dashboards_paragraph {
+  margin: var(--margin-1) 0;
+}
+.product_team_allocation {
+  display: flex;
+  align-items: baseline;  
+  gap: 12px;
+  flex-direction: row-reverse;
+}
+@media screen and (min-width: 768px) {
+  .product_dashboards_bg{
+    padding: var(--padding-3);
+  }
+  .product_dashboards {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0;
+    /* padding-left: var(--padding-4); */
+  }
+  .product_dashboards_paragraph {
+    border-left: 1px solid;
+    padding-left: var(--margin-3);
+  }
+  .product_figma_integration {
+    border-right: 1px solid;
+  }
+
+  .product_dashboards_title h5 {
+    margin: var(--margin-3) 0;
+  }
+  .product_dashboards_info {
+    justify-content: center;    
+  }
+}

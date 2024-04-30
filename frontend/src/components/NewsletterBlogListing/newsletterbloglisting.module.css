@@ -1,0 +1,22 @@
+.newsletter_bloglisting_bg {
+  background-color: var(--together-impact-bg);
+  padding: var(--padding-8) var(--padding-8)
+}
+.newsletter_bloglisting_heading {
+ margin: var(--margin-2) 0;
+}
+.newsletter_bloglisting_flex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: var(--margin-8);
+  margin-bottom: var(--margin-4);
+}
+.newsletter_info {
+  margin-bottom: var(--margin-10);
+}
+@media screen and (min-width:992px) {
+  .newsletter_bloglisting_flex {
+    justify-content: center;
+  }
+}

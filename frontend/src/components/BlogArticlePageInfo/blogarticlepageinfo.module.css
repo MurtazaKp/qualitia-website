@@ -1,0 +1,22 @@
+.blog_article_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.blog_article_info_width {
+  width: var(--width-90);
+}
+.blog_article_link_width {
+  width: var(--width-10);
+} 
+.fixed_link{
+  padding: 0;
+}
+.fixed_link li {
+  margin: var(--margin-6) 0;
+}
+.fixed_link_position {
+  position: sticky;
+  top: 0px;
+  right: 0px;
+}

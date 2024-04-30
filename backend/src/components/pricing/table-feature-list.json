@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pricing_table_feature_lists",
+  "info": {
+    "displayName": "Table Feature List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "tableFeaturesList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.pricing-feature"
+    },
+    "tagName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.round {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.team_culture_card {
+  padding: var(--padding-8);
+  background-color: var(--integrations-card-bg); 
+  margin-top: var(--margin-2);
+  margin-bottom: var(--margin-2);
+}
+.round_bg_pink {
+  background-color: var(--secondary);
+}
+.round_bg_sky_blue {
+  background-color: var(--tertiary);
+}
+.round_bg_violet {
+  background-color: var(--round-bg-violet);
+}
+.team_culture_card_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: var(--margin-2);
+  margin-bottom: var(--margin-2);
+
+}
+@media screen and (min-width:992px) {
+  .team_culture_card_margin {
+      margin:calc( var(--margin-2))0;
+  }
+  .team_culture_card {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .team_culture_card_flex {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

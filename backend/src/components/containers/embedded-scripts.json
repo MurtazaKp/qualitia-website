@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_containers_embedded_scripts",
+  "info": {
+    "displayName": "Embedded Scripts",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "script": {
+      "type": "text"
+    }
+  }
+}

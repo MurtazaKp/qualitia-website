@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_pricing_pricing_plans_lists",
+  "info": {
+    "displayName": "Pricing Plans List",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pricing_plans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pricing-plan.pricing-plan"
+    },
+    "pricingBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pricing.banner"
+    },
+    "showPricingTable": {
+      "type": "boolean",
+      "default": false
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["Simple", "Standard"],
+      "default": "Simple"
+    }
+  }
+}

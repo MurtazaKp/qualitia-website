@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navigations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navigation.navigation"
+    },
+    "announcement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.announcement",
+      "required": true
+    },
+    "appearanceTimeoutInSeconds": {
+      "type": "integer"
+    },
+    "slideSpeedInSeconds": {
+      "type": "integer"
+    },
+    "announcementVisibility": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "menuAction": {
+      "type": "enumeration",
+      "enum": [
+        "Click",
+        "Hover"
+      ],
+      "required": true,
+      "default": "Hover"
+    },
+    "signUpButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "signInButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

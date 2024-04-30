@@ -1,0 +1,49 @@
+.enterprise_benefits_card_title {
+  margin-bottom: var(--margin-2);
+  margin-top: 0;
+}
+.enterprise_benefits_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.enterprise_benefits_card_paragraph p {
+  margin-bottom: var(--margin-2);
+  margin-top: 0;
+}
+.enterprise_benefits_card_margin {
+  padding: var(--padding-6);
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  margin-bottom: var(--margin-2);
+}
+
+.business_alignment_img {
+  width: var(--width-full);
+  object-fit: contain;
+}
+.card_wrapper {
+  border-radius: 0.625rem;
+  margin-bottom: var(--margin-2);
+}
+@media screen and (min-width: 992px) {
+  .enterprise_benefits_card_margin {
+    margin-bottom: var(--margin-2);
+  }
+  .card_heading {
+    margin-bottom: var(--margin-6);
+  }
+  .enterprise_benefits_pink_circle {
+    width: 2rem;
+    height: 2rem;
+  }
+  .enterprise_benefits_bg {
+    padding: var(--padding-8);
+  }
+  .enterprise_benefits_flex {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "collectionName": "components_containers_resources",
+  "info": {
+    "displayName": "Resources List",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "trackingId": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Grid",
+        "Grid Without Image",
+        "Grid Highlight",
+        "Banner",
+        "Podcast Grid",
+        "Podcast Grid Highlight"
+      ],
+      "default": "Grid",
+      "required": true
+    },
+    "cardBackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource.resource"
+    },
+    "isSearchBox": {
+      "type": "boolean",
+      "default": false
+    },
+    "isFilterTabs": {
+      "type": "boolean",
+      "default": false
+    },
+    "verticalSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical Spacing 0%",
+        "Vertical Spacing 1%",
+        "Vertical Spacing 2%",
+        "Vertical Spacing 3%",
+        "Vertical Spacing 4%",
+        "Vertical Spacing 5%",
+        "Vertical Spacing 6%",
+        "Vertical Spacing 7%",
+        "Vertical Spacing 8%",
+        "Vertical Spacing 9%",
+        "Vertical Spacing 10%"
+      ],
+      "default": "Vertical Spacing 1%"
+    },
+    "isPagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "sortBy": {
+      "type": "enumeration",
+      "enum": [
+        "Created Date",
+        "Default Adding "
+      ],
+      "default": "Default Adding "
+    },
+    "cardHoverColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

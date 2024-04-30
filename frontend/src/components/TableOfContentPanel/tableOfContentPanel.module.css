@@ -1,0 +1,21 @@
+.sidebar_list {
+  margin: var(--margin-1) 0;
+  cursor: pointer;
+  font-weight: var(--normal);
+  color: var(--color-secondary-text-light);
+  padding: var(--padding-2);
+  border-radius: var( --border-radius-1);
+}
+.active {
+  color: var(--color-primary-text);
+  background-color:var(--active-tab-bg);
+}
+.content_panel_section_margin {
+  margin-top: var(--margin-6);
+}
+@media screen and (min-width:922px) {
+  .sidebar_list_padding {
+    padding:0 var(--padding-4);
+  }
+  
+}

@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_shared_pricing_cards",
+  "info": {
+    "displayName": "Pricing Card",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "annualActualPrice": {
+      "type": "string"
+    },
+    "annualSalePrice": {
+      "type": "string"
+    },
+    "monthActualPrice": {
+      "type": "string"
+    },
+    "monthSalePrice": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+
+    "tableFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.table-feature-list"
+    }
+  }
+}

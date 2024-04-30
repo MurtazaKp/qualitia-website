@@ -1,0 +1,8 @@
+.share_wrapper {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+.copy_link {
+  cursor: pointer;
+}

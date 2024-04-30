@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_containers_table_of_content_panels",
+  "info": {
+    "displayName": "Table Of Content Panel",
+    "icon": "clipboard-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tableOfContents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.table-of-content"
+    },
+    "verticalSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical Spacing 0%",
+        "Vertical Spacing 1%",
+        "Vertical Spacing 2%",
+        "Vertical Spacing 3%",
+        "Vertical Spacing 4%",
+        "Vertical Spacing 5%",
+        "Vertical Spacing 6%",
+        "Vertical Spacing 7%",
+        "Vertical Spacing 8%",
+        "Vertical Spacing 9%",
+        "Vertical Spacing 10%"
+      ],
+      "default": "Vertical Spacing 1%"
+    }
+  }
+}

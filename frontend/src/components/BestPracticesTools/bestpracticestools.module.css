@@ -1,0 +1,38 @@
+.bestpracticestools {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: var(--margin-1);
+  margin-bottom: var(--margin-1);
+  column-gap: 0.5rem;
+}
+.bestpracticestools_img {
+  width: 15%;
+  max-height: 26px;
+}
+@media screen and (min-width: 768px) {
+  .bestpracticestools_margin {
+    margin-left: 10px;
+  }
+  .bestpracticestools_border:nth-child(1) .bestpracticestools_margin {
+    margin-left: 0px;
+  }
+  .bestpracticestools_border {
+    padding: var(--padding-1);
+  }
+  .bestpracticestools_border:not(:nth-last-child(1)) {
+    border-right: 1px solid var(--primary-medium);
+  }
+}
+@media screen and (min-width: 992px) {
+  .bestpracticestools_border {
+    padding: 0 var(--padding-4) 0 0;
+  }
+  .bestpracticestools_border:not(:nth-last-child(1)) {
+    border-right: 1px solid var(--primary-medium);
+  }
+  .tools_title {
+    font-size: 1rem;
+    min-height: 50px;
+  }
+}

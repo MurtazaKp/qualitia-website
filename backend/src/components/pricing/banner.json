@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_pricing_banners",
+  "info": {
+    "displayName": "Pricing Banner",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "annualButtonLabel": {
+      "type": "string",
+      "default": "Annually",
+      "required": true
+    },
+    "annualButtonTrackingId": {
+      "type": "string",
+      "default": "annualPricing",
+      "required": true
+    },
+    "monthButtonLabel": {
+      "type": "string",
+      "default": "Monthly",
+      "required": true
+    },
+    "monthButtonTrackingId": {
+      "type": "string",
+      "required": true,
+      "default": "monthlyPricing"
+    },
+    "verticalSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical Spacing 0%",
+        "Vertical Spacing 1%",
+        "Vertical Spacing 2%",
+        "Vertical Spacing 3%",
+        "Vertical Spacing 4%",
+        "Vertical Spacing 5%",
+        "Vertical Spacing 6%",
+        "Vertical Spacing 7%",
+        "Vertical Spacing 8%",
+        "Vertical Spacing 9%",
+        "Vertical Spacing 10%"
+      ],
+      "default": "Vertical Spacing 1%"
+    }
+  }
+}

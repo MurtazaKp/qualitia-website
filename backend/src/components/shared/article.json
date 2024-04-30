@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_shared_articles",
+  "info": {
+    "displayName": "Article",
+    "icon": "money-check-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sectionHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Text left",
+        "Text right",
+        "Text bottom"
+      ],
+      "default": "Text right",
+      "required": true
+    }
+  }
+}

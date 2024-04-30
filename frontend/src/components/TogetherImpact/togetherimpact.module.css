@@ -1,0 +1,29 @@
+.together_impact_bg {
+  background-color: var(--together-impact-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.together_impact_padding {
+  padding: var(--padding-9);
+}
+.together_impact_heading {
+  font-weight: 400;
+  margin:0 var(--margin-2) ;
+}
+.together_impact_heading_margin {
+  margin: var(--margin-4) 0;
+}
+.together_impact_flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+} 
+
+.join_our_team_btn {
+  padding: var(--padding-2) var(--padding-3);
+  border-radius: 50px;
+  /* display: inline-block; */
+}
+

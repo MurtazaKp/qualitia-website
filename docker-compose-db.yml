@@ -1,0 +1,34 @@
+version: "3"
+services:
+  db:
+    image: postgres:13-alpine
+    container_name: dev-cubyts-db
+    restart: always
+    volumes:
+      - "../pgadmin-data:/var/lib/pgadmin"
+    environment:
+      POSTGRES_PASSWORD: trush
+      POSTGRES_USER: postgres
+      POSTGRES_DB: dev-cubyts
+
+    networks:
+      - dev-cubyts
+
+  pgadmin:
+    image: dpage/pgadmin4:5.7
+    container_name: dev-cubyts-pgadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: trush@geexu.com
+      PGADMIN_DEFAULT_PASSWORD: trush
+    #    volumes:
+    #      - "../pgadmin-data:/var/lib/pgadmin"
+
+    networks:
+      - dev-cubyts
+
+networks:
+  dev-cubyts:
+    external: true

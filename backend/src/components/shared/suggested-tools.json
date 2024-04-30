@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_containers_suggested_tools",
+  "info": {
+    "displayName": "Suggested Tools",
+    "icon": "tools",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "tools": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.suggested-tool"
+    },
+    "trackingId": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

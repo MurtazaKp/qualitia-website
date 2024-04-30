@@ -1,0 +1,24 @@
+.announcement_bar_wrapper {
+  vertical-align: top;
+}
+.announcement_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: clamp(1rem, 1.0938rem + 0.5vw, 1.25rem); */
+  color: var(--secondary-light);
+  /* background-color: var(--annulment_bar_color); */
+  padding: var(--padding-2);
+  flex-direction: column;
+}
+.announcement_bar a {
+  color: var(--color-light);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .announcement_bar {
+    flex-direction: row;
+  }
+}

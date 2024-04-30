@@ -1,0 +1,19 @@
+.paragraph_padding {
+  margin: var(--margin-1) 0;
+}
+.paragraph_padding p {
+  margin-top: 0;
+}
+.paragraph_padding h1,
+.paragraph_padding h2,
+.paragraph_padding h3,
+.paragraph_padding h4,
+.paragraph_padding h5,
+.paragraph_padding h6 {
+  margin: 0 0 var(--padding-3) 0;
+}
+@media (min-width: 992px) {
+  .paragraph_padding {
+    margin: var(--margin-5) calc(var(--margin-10) + var(--margin-10));
+  }
+}

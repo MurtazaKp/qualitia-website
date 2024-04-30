@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../font/icon-font/fonts/icomoon.eot?l9xb7");
+  src: url("../font/icon-font/fonts/icomoon.eot?l9xb7#iefix")
+      format("embedded-opentype"),
+    url("../font/icon-font/fonts/icomoon.ttf?l9xb7") format("truetype"),
+    url("../font/icon-font/fonts/icomoon.woff?l9xb7") format("woff"),
+    url("../font/icon-font/fonts/icomoon.svg?l9xb7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Alignment:before {
+  content: "\e900";
+}
+.icon-Automated-Reporting:before {
+  content: "\e901";
+}
+.icon-Best-Practices:before {
+  content: "\e902";
+}
+.icon-Blogs:before {
+  content: "\e903";
+}
+.icon-Business-Alignment:before {
+  content: "\e904";
+}
+.icon-Collaboration:before {
+  content: "\e905";
+}
+.icon-Compare-Design .path1:before {
+  content: "\e906";
+  color: rgb(255, 233, 233);
+}
+.icon-Compare-Design .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(219, 106, 133);
+}
+.icon-Compare-Design .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(219, 106, 133);
+}
+.icon-Compare-Enterprise .path1:before {
+  content: "\e909";
+  color: rgb(207, 248, 255);
+}
+.icon-Compare-Enterprise .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(54, 152, 232);
+}
+.icon-Compare-Enterprise .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(54, 152, 232);
+}
+.icon-Compare-Product .path1:before {
+  content: "\e90c";
+  color: rgb(234, 227, 255);
+}
+.icon-Compare-Product .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(61, 61, 196);
+}
+.icon-Compare-Product .path3:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(61, 61, 196);
+}
+.icon-Compare-Product .path4:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(61, 61, 196);
+}
+.icon-Contributors:before {
+  content: "\e910";
+}
+.icon-Dashboard:before {
+  content: "\e911";
+}
+.icon-Design-Culture:before {
+  content: "\e912";
+}
+.icon-Design-Leader:before {
+  content: "\e913";
+}
+.icon-Design-Maturity:before {
+  content: "\e914";
+}
+.icon-Design-Team:before {
+  content: "\e915";
+}
+.icon-Designer-Researcher:before {
+  content: "\e916";
+}
+.icon-Difficulty:before {
+  content: "\e917";
+}
+.icon-Duration:before {
+  content: "\e918";
+}
+.icon-Enterprise-Team:before {
+  content: "\e919";
+}
+.icon-Events:before {
+  content: "\e91a";
+}
+.icon-Execution:before {
+  content: "\e91b";
+}
+.icon-Facebook .path1:before {
+  content: "\e91c";
+  color: rgb(97, 63, 229);
+}
+.icon-Facebook .path2:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-GDPR:before {
+  content: "\e91e";
+}
+.icon-Guides:before {
+  content: "\e91f";
+}
+.icon-Information:before {
+  content: "\e920";
+}
+.icon-Integration:before {
+  content: "\e921";
+}
+.icon-Knowledge:before {
+  content: "\e922";
+}
+.icon-Linkedin .path1:before {
+  content: "\e923";
+  color: rgb(97, 63, 229);
+}
+.icon-Linkedin .path2:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(253, 253, 253);
+}
+.icon-Linkedin .path3:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(253, 253, 253);
+}
+.icon-Linkedin .path4:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(253, 253, 253);
+}
+.icon-Medium .path1:before {
+  content: "\e927";
+  color: rgb(97, 63, 229);
+}
+.icon-Medium .path2:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Medium .path3:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Medium .path4:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-My-work:before {
+  content: "\e92b";
+}
+.icon-New-Icons_Arrow-Bottom:before {
+  content: "\e92c";
+}
+.icon-New-Icons_Arrow-Left:before {
+  content: "\e92d";
+}
+.icon-New-Icons_Arrow-Right:before {
+  content: "\e92e";
+}
+.icon-New-Icons_Arrow-Top:before {
+  content: "\e92f";
+}
+.icon-People-Ops:before {
+  content: "\e930";
+}
+.icon-Podcast:before {
+  content: "\e931";
+}
+.icon-Prcing-Enterprise .path1:before {
+  content: "\e932";
+  color: rgb(255, 159, 165);
+}
+.icon-Prcing-Enterprise .path2:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Prcing-Enterprise .path3:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Prcing-Enterprise .path4:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Prcing-Enterprise .path5:before {
+  content: "\e936";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Prcing-Enterprise .path6:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Prcing-Pack-3 .path1:before {
+  content: "\e938";
+  color: rgb(141, 113, 250);
+}
+.icon-Prcing-Pack-3 .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Pricing-Pack-1 .path1:before {
+  content: "\e93a";
+  color: rgb(255, 187, 123);
+}
+.icon-Pricing-Pack-1 .path2:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Pricing-Pack-2 .path1:before {
+  content: "\e93c";
+  color: rgb(130, 216, 215);
+}
+.icon-Pricing-Pack-2 .path2:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Pricing-Pack-4 .path1:before {
+  content: "\e93e";
+  color: rgb(255, 159, 165);
+}
+.icon-Pricing-Pack-4 .path2:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Product-Manager:before {
+  content: "\e940";
+}
+.icon-Product-Team:before {
+  content: "\e941";
+}
+.icon-Project-Management:before {
+  content: "\e942";
+}
+.icon-Repository:before {
+  content: "\e943";
+}
+.icon-SOC:before {
+  content: "\e944";
+}
+.icon-Standards:before {
+  content: "\e945";
+}
+.icon-System-Status-54:before {
+  content: "\e946";
+}
+.icon-System-Status:before {
+  content: "\e947";
+}
+.icon-Team:before {
+  content: "\e948";
+}
+.icon-Twitter .path1:before {
+  content: "\e949";
+  color: rgb(97, 63, 229);
+}
+.icon-Twitter .path2:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Visibility:before {
+  content: "\e94b";
+}
+.icon-Webinars:before {
+  content: "\e94c";
+}
+.icon-Workshops:before {
+  content: "\e94d";
+}
+.icon-Youtube .path1:before {
+  content: "\e94e";
+  color: rgb(97, 63, 229);
+}
+.icon-Youtube .path2:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Youtube .path3:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Youtube .path4:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(97, 63, 229);
+}
+.icon-uniE93F:before {
+  content: "\e93f";
+  font-size: 28px;
+}

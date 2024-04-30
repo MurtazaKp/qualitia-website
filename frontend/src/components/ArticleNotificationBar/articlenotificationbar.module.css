@@ -1,0 +1,33 @@
+
+.practices_people_info {
+  display: flex;
+  flex-direction: column;
+  gap:0.875rem ;
+ }
+ .practices_people_info_paragraph  {
+  margin:0 0 var(--margin-1) 0;
+ }
+ .practices_people_info_date {
+
+ }
+ .practices_people_views {
+  display: flex;
+  align-items: center;
+  gap:1.875rem;
+  margin-top:var(--margin-4);
+  
+ }
+ .practices_people_icons_margin {
+  margin:0 var(--margin-1);
+ }
+ @media screen and (min-width:992px) {
+  .practices_people_info {
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+  }
+  .practices_people_views {
+      justify-content: end;
+      margin-top:0;
+  }
+ }

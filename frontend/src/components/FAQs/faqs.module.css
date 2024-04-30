@@ -1,0 +1,18 @@
+.faqs_flex {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color-secondary);
+  padding: var(--padding-4) 0;
+}
+.faqs_title {
+  font-size: var(--body-font-tertiary);
+  margin: 0;
+  cursor: pointer;
+}
+.faq_icon {
+  cursor: pointer;
+  min-width: 1.5rem;
+  line-height: 2;
+}

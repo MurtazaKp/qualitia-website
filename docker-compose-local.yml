@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  api:
+    restart: always
+    build: ./backend
+    ports:
+      - '1337:1337'
+    networks:
+      - dev-cubyts
+
+  frontend:
+    restart: always
+    build: ./frontend
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+    environment:
+      API_BASE_URL: 'https://cubyts-api.geexu.org'
+
+    networks:
+      - dev-cubyts
+
+networks:
+  dev-cubyts:
+    external: true

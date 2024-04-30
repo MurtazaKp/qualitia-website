@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_containers_cookie_banners",
+  "info": {
+    "displayName": "Cookie Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cookieDescription": {
+      "type": "richtext"
+    },
+    "denyCookie": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "acceptCookie": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "cookies": {
+      "displayName": "Cookies",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cookies"
+    }
+  }
+}

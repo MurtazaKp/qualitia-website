@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ]
+    },
+    "subMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.sub-menus"
+    },
+    "menuResources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.menu-resources"
+    }
+  }
+}

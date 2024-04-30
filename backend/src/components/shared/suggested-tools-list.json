@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_suggested_tools_lists",
+  "info": {
+    "displayName": "Suggested Tools List",
+    "icon": "tools"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "toolsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.suggested-tools"
+    },
+    "verticalSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical Spacing 0%",
+        "Vertical Spacing 1%",
+        "Vertical Spacing 2%",
+        "Vertical Spacing 3%",
+        "Vertical Spacing 4%",
+        "Vertical Spacing 5%",
+        "Vertical Spacing 6%",
+        "Vertical Spacing 7%",
+        "Vertical Spacing 8%",
+        "Vertical Spacing 9%",
+        "Vertical Spacing 10%"
+      ],
+      "default": "Vertical Spacing 1%"
+    }
+  }
+}

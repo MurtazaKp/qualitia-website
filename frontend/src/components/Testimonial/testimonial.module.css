@@ -1,0 +1,100 @@
+/* .testimonial_heading {
+  margin-bottom:var(--margin-5) ;
+} */
+.item {
+  margin-bottom: var(--margin-2);
+  break-inside: avoid;
+  background-color: var(--color-light);
+  /* box-shadow: 0.125rem 0.125rem 0.25rem 0 var(--border-color); */
+  /* border: 1px solid var(--border-color); */
+  border-radius: var(--testimonial-border-radius)
+    var(--testimonial-border-radius) 0 var(--testimonial-border-radius);
+  overflow: hidden;
+  color: var(--testimonial-text-color);
+}
+.item:hover {
+  box-shadow: var(--shadow-lg);
+  background-color: var(--primary);
+  color: var(--color-light);
+}
+.item > .item {
+  margin-bottom: 0;
+  border: 0;
+  overflow: hidden;
+}
+.testimonial_grid {
+  columns: 1;
+  grid-row: 3;
+  column-gap: var(--grid-gutter);
+}
+.imamge_wrap {
+  overflow: hidden;
+}
+.img_width {
+  width: var(--width-full);
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.img_width.frame {
+  width: var(--width-full);
+  /* height: var(--testimonial-card-img-small); */
+  object-fit: fill;
+  display: block;
+}
+.testimonial_primary_card {
+  padding: var(--padding-4);
+}
+.testimonial_secondary_card {
+  padding: var(--padding-3);
+}
+.testimonial_tertiary_card {
+  padding: var(--padding-2);
+}
+.testimonial_bg_color {
+  background-color: var(--testimonial_bg_color);
+}
+/* .item:nth-child(4n + 1) {
+  background-color: var(--orange);
+}
+.item:nth-child(4n + 2) {
+  background-color: var(--tertiary);
+}
+.item:nth-child(4n + 3) {
+  background-color: var(--secondary-medium);
+} */
+/* .item:nth-child(5n + 4) {
+  background-color: var(--secondary-light);
+  color: var(--color-primary-text);
+} */
+/* .item:nth-child(4n + 4) {
+  background-color: var(--primary);
+} */
+
+@media screen and (min-width: 576px) {
+  .testimonial_grid {
+    columns: 2;
+    grid-row: 3;
+    column-gap: var(--grid-gutter_double);
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonial_grid {
+    columns: 3;
+    grid-row: 3;
+  }
+}
+@media screen and (min-width: 992px) {
+  .testimonial_grid {
+    columns: 4;
+    grid-row: 3;
+    column-gap: var(--grid-gutter);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testimonial_grid {
+    columns: 5;
+    grid-row: 3;
+    column-gap: var(--grid-gutter);
+  }
+}

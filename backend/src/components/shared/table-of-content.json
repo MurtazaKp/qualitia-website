@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_table_of_contents",
+  "info": {
+    "displayName": "Table Of Content",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "trackingId": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank",
+        "_self"
+      ],
+      "default": "_self"
+    },
+    "canonicalURL": {
+      "type": "string"
+    }
+  }
+}

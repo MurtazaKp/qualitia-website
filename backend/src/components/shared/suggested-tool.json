@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_suggested_tools",
+  "info": {
+    "displayName": "Suggested Tool"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageAlt": {
+      "type": "string"
+    }
+  }
+}

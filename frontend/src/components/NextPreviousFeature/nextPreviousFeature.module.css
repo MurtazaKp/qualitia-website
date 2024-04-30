@@ -1,0 +1,26 @@
+.highlight_text {
+  color: var(--color-highlight-text);
+  margin: 0 var(--margin-1);
+}
+.next_prev_wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.icon_right {
+  height: 1rem;
+  transform: rotate(180deg);
+}
+.icon_left {
+  height: 1rem;
+}
+.icons_color {
+  color: var(--color-primary-text);
+}
+@media screen and (min-width: 776px) {
+  .next_prev_wrapper {
+    max-width: var(--width-60);
+  }
+}

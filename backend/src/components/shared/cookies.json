@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_cookies",
+  "info": {
+    "displayName": "Cookies"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

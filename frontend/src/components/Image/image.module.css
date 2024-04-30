@@ -1,0 +1,4 @@
+.iframe_container {
+  width: var(--width-full);
+  aspect-ratio: 16 / 9;
+}

@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_home_integrations_showcases",
+  "info": {
+    "displayName": "Integrations showcase",
+    "icon": "bezier-curve",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": false
+    },
+    "subHeading": {
+      "type": "text",
+      "required": false
+    },
+    "primary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media",
+      "required": true
+    },
+    "trackingId": {
+      "type": "string"
+    },
+    "integrations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::integration.integration"
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "verticalSpacing": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical Spacing 0%",
+        "Vertical Spacing 1%",
+        "Vertical Spacing 2%",
+        "Vertical Spacing 3%",
+        "Vertical Spacing 4%",
+        "Vertical Spacing 5%",
+        "Vertical Spacing 6%",
+        "Vertical Spacing 7%",
+        "Vertical Spacing 8%",
+        "Vertical Spacing 9%",
+        "Vertical Spacing 10%"
+      ],
+      "default": "Vertical Spacing 1%"
+    }
+  }
+}

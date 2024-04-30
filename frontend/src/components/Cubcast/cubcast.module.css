@@ -1,0 +1,45 @@
+.cubcast {
+  position: relative;
+}
+
+.cubcast::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: var(--podcast_bg);
+  width: 100%;
+  height: 62%;
+  z-index: -1;
+}
+.cubcast_heading {
+  margin: var(--margin-3) 0;
+}
+.cubcast_highlight {
+  color: var(--color-highlight-text);
+}
+.cubcast_paragraph {
+  margin: var(--margin-1) 0;
+}
+.cubcast_ul_components {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: var(--margin-7);
+  margin: var(--margin-4);
+}
+.cubcast_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cubcast_img_width {
+  width: fit-content;
+}
+@media screen and (min-width:992px) {
+  .cubcast_img {
+    flex-direction: row;
+    
+  }
+}

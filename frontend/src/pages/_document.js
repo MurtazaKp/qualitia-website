@@ -1,0 +1,15 @@
+import { Head, Html, Main, NextScript } from 'next/document'
+
+export default function Document() {
+    return (
+        <Html lang="en-US">
+            <Head />
+            <body>
+                <Main />
+                <NextScript />
+                {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBBRJ5X"
+                    height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript> */}
+            </body>
+        </Html>
+    )
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_pricing_pricing_features",
+  "info": {
+    "displayName": "Pricing Feature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "value": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "tagName": {
+      "type": "string"
+    },
+    "bulletStyle": {
+      "type": "enumeration",
+      "enum": [
+        "Dot",
+        "Check",
+        "Highlight"
+      ],
+      "default": "Dot",
+      "required": false
+    }
+  }
+}

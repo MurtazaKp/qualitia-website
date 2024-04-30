@@ -1,0 +1,129 @@
+.footer_color {
+  background-color: var(--footer-color);
+}
+.footer {
+  font-size: var(--footer-font);
+  padding: 0;
+  overflow: hidden;
+  letter-spacing: var(--footer-heading-spacing);
+}
+.footer .border_bottom {
+  padding: 3% var(--container-spacing-mobile) 0;
+}
+.footer_logo {
+  width: var(--footer-logo-width);
+  height: auto;
+}
+.footer_padding {
+  padding: var(--padding-2) 0 0;
+}
+.list_unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer_heading {
+  font-size: var(--body-font);
+  margin-top: 0;
+  margin-bottom: var(--margin-1);
+  font-weight: 600;
+}
+
+.footer_link {
+  color: var(--color-primary-text);
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer_item {
+  margin: var(--margin-2) 0;
+}
+.footer_copyright_text {
+  padding: var(--padding-2);
+  line-height: var(--line-height-primary);
+  text-align: center;
+}
+.footer_col_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-4);
+}
+.first_item {
+  flex: 0 0 100%;
+}
+.item {
+  width: 100%;
+}
+.item_two_column {
+  width: 100%;
+}
+.footer_social_media_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  gap: var(--margin-3);
+}
+.footer_social_media_icons {
+  font-size: var(--sm-heading-tertiary-max);
+}
+.item_two_column ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+}
+.item_two_column ul li {
+  width: calc(50% - 12px);
+  margin-bottom: 12px;
+  margin-top: 0px;
+}
+.footer_social_media_icons {
+  height: var(--sm-heading-tertiary-max);
+  width: var(--sm-heading-tertiary-max);
+}
+@media screen and (min-width: 576px) {
+  .footer_col_wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .first_item {
+    flex: 0 0 45%;
+  }
+  .item {
+    flex: 0 0 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer_col_wrapper {
+    flex-wrap: nowrap;
+  }
+  .first_item {
+    flex: 0 0 30%;
+  }
+  .item_two_column {
+    flex: 0 0 30%;
+  }
+  .item {
+    flex: auto;
+    width: 100%;
+  }
+  .footer .border_bottom {
+    padding: 3% var(--container-spacing) 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .border_right:not(:nth-last-child(1)) {
+    border-right: var(--border-1) solid var(--footer-border);
+  }
+  .border_bottom {
+    border-bottom: var(--border-1) solid var(--footer-border);
+  }
+  .footer_padding {
+    padding: 0 var(--padding-3) var(--padding-5) var(--padding-3);
+  }
+  .footer_copyright_text {
+    text-align: center;
+    padding: var(--padding-5);
+  }
+}

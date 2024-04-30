@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  api:
+    restart: always
+    build: ./backend
+    networks:
+      - dev-cubyts
+
+  frontend:
+    restart: always
+    build: ./frontend
+    depends_on:
+      - api
+
+    networks:
+      - dev-cubyts
+
+networks:
+  dev-cubyts:
+    external: true

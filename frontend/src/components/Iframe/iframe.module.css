@@ -1,0 +1,51 @@
+.iframe_container {
+  /* width: var(--width-full);
+  aspect-ratio: 16 / 9.8;
+  max-width: 1440px;
+  max-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  box-shadow: var(--shadow-lg);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  background-color: var(--footer-color); */
+  display: block;
+  width: 1440px;
+  height: 862px;
+  max-width: 1440px;
+  max-height: 862px;
+  margin: 0 auto;
+  box-shadow: -4px 3px 8px 3px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border: 0px;
+}
+/* .iframe_margin {
+  margin: 0 auto;
+} */
+@media screen and (max-width: 768px) {
+  .iframe_container {
+    /* aspect-ratio: 16 / 9.8;
+    max-width: 1440px;
+    max-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    transform: scale(0.26);
+    transform-origin: left top;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .iframe_container {
+    width: 1440px;
+    height: 862px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    box-shadow: var(--shadow-lg);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    background-color: var(--footer-color);
+  }
+}

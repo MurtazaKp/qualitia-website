@@ -1,0 +1,57 @@
+.cookie_wrapper {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 24px 24px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.cookie_wrapper div {
+  position: relative;
+}
+.cookie_wrapper .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+
+.cookie_wrapper .link {
+  color: #613fe5;
+}
+
+.cookie_wrapper .button_wrapper:nth-child(2) {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .cookie_wrapper {
+    right: 10px;
+    bottom: 10px;
+    width: 70%;
+  }
+
+  .cookie_wrapper .button_wrapper:nth-child(2) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cookie_wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .cookie_wrapper {
+    width: 40%;
+  }
+}

@@ -1,0 +1,124 @@
+.insights_card_highlight_text {
+  color: var(--subheading_color);
+  display: block;
+  font-weight: 500;
+}
+.insights_card_paragraph {
+  margin: var(--margin-1) 0;
+  font-weight: 600;
+}
+
+.insights_card_margin {
+  margin-top: var(--margin-1);
+  margin-bottom: var(--margin-1);
+  font-weight: 500;
+}
+
+.resource_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-1) var(--padding-1) var(--padding-2);
+  border-radius: var(--search_box_border-radius);
+  padding: var(--padding-5) var(--padding-4);
+  width: 100%;
+}
+
+.filter_search_wrapper {
+  display: none;
+  column-gap: 1rem;
+}
+
+.resources_tabs {
+  display: flex;
+  gap: var(--margin-3);
+  color: var(--footer-border);
+  flex-wrap: wrap;
+}
+.resources_tabs .active,
+.resources_tabs .filter_tab:hover {
+  color: var(--color-primary-text);
+  border-bottom: 2px solid;
+}
+.search_box {
+  padding: var(--padding-2) var(--padding-1) var(--padding-2) var(--padding-8);
+  border-radius: var(--search_box_border-radius);
+  border: 1px solid var(--footer-border);
+  min-width: 18rem;
+  display: block;
+  font-size: 1rem;
+  border-color: var(--border-color);
+}
+.search_box_position {
+  position: relative;
+  margin: 0 auto;
+}
+.search_box_position_absolute {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  line-height: 1;
+  fill: #6b768b;
+}
+.filter_tab {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.title_link {
+  text-decoration: none;
+  color: var(--color-primary-text);
+  width: 100%;
+}
+.title_link:hover h4 {
+  text-decoration: underline;
+}
+.title_link:hover {
+  text-decoration: none;
+}
+.no_result_found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--padding-5);
+  color: var(--color-secondary-text-light);
+}
+
+.card_line {
+  background-color: var(--color-primary-text);
+  width: 24px;
+  height: 2px;
+  margin-bottom: var(--margin-4);
+}
+
+.card_gutter {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination {
+  margin: var(--margin-4) 0 var(--margin-1) 0;
+}
+@media screen and (min-width: 768px) {
+  .resource_card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .resource_card {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .filter_search_wrapper {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: var(--margin-6);
+    align-items: flex-start;
+  }
+}

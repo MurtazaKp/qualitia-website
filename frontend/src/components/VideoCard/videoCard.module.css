@@ -1,0 +1,26 @@
+.banner_video {
+  width: var(--width-full);
+  aspect-ratio: 16 / 9;
+  background: var(--color-primary-bg);
+}
+.margin_auto {
+  margin: 0 var(--margin);
+}
+.main_heading {
+  margin-bottom: var(--margin-5);
+}
+.banner_video_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_video iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+@media screen and (min-width: 992px) {
+  .banner_video {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}

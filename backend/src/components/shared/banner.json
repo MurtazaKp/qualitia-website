@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_shared_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Without Image",
+        "Image Left",
+        "Image Right",
+        "Image Below",
+        "Image Background - Text Left",
+        "Image Background - Text Right",
+        "Image Background - Text Centre"
+      ],
+      "default": "Without Image",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "descriptionTextColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": false,
+      "customField": "plugin::color-picker.color"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "mobImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cta"
+    },
+    "imageAlt": {
+      "type": "string"
+    }
+  }
+}

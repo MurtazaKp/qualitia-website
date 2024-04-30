@@ -1,0 +1,200 @@
+.text_center {
+  align-items: center;
+}
+.text_center h1,
+.text_center h2,
+.text_center h3,
+.text_center h4,
+.text_center h5,
+.text_center h6 {
+  margin-inline: 0;
+}
+.margin_auto {
+  margin: 0 var(--margin);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.banner_btn {
+  text-decoration: none;
+  display: inline-block;
+}
+.banner_heading_margin {
+  margin: 0 0;
+  padding: 0;
+}
+.banner_paragraph {
+  margin-top: var(--margin-5);
+  margin-bottom: var(--margin-5);
+}
+.banner_paragraph_color {
+  color: var(--banner-font-color);
+}
+.banner_btn_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--margin-2);
+}
+.bottom_banner_image {
+  width: var(--width-full);
+  /* aspect-ratio: 16 / 9; */
+}
+/*bg-img*/
+.banner_bg_img_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_bg_img {
+  background-image: url(../../assets/geexu-css/insights-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.banner_section_spacing {
+  margin: var(--section-spacing-4x) 0 var(--section-spacing-3x) 0;
+}
+.banner_image {
+  width: var(--width-full);
+}
+.banner_heading_padding {
+  padding-top: 0;
+}
+/*left and right side img start*/
+.banner_img_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_img_center img {
+  width: var(--width-full);
+}
+.imageright_component {
+  overflow: hidden;
+  padding: 2px;
+}
+.imageright_component h1,
+.imageright_component h2 {
+  margin-left: 0px;
+}
+.imagereft_component h1,
+.imagereft_component h2 {
+  margin-left: 0px;
+}
+.banner_bottom_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*left and right side img end*/
+
+/* Banner left/right image variation CSS here */
+.banner_left_img_variation .banner_btn_flex,
+.banner_right_img_variation .banner_btn_flex,
+.banner_background_text_left_variation .banner_btn_flex,
+.banner_background_text_right_variation .banner_btn_flex {
+  justify-content: flex-start;
+  margin-top: var(--margin-5);
+  flex-direction: row;
+}
+.banner_background_text_center_variation .banner_btn_flex {
+  margin-top: var(--margin-5);
+  flex-direction: row;
+}
+.banner_right_img_variation .imageright_component {
+  justify-content: space-between;
+}
+.banner_left_img_variation .banner_text_wrapper,
+.banner_right_img_variation .banner_text_wrapper,
+.banner_background_text_left_variation .banner_text_wrapper,
+.banner_background_text_right_variation .banner_text_wrapper,
+.banner_background_text_center_variation .banner_text_wrapper {
+  padding-left: var(--container-spacing);
+  padding-right: var(--container-spacing);
+  padding-bottom: var(--container-spacing);
+}
+.bottom_banner_image {
+  padding-top: var(--container-spacing);
+}
+/* banner background image text left/right/center variation css here */
+.banner_background_text_left_variation,
+.banner_background_text_right_variation,
+.banner_background_text_center_variation {
+  height: calc(100vh - 72px);
+  align-items: center;
+}
+.banner_bottom_img_variation {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .banner_left_img_variation .banner_text_wrapper,
+  .banner_right_img_variation .banner_text_wrapper,
+  .banner_background_text_left_variation .banner_text_wrapper,
+  .banner_background_text_right_variation .banner_text_wrapper,
+  .banner_background_text_center_variation .banner_text_wrapper {
+    padding: 0px;
+  }
+  .banner_left_img_variation .banner_text_wrapper{
+    margin-inline: var(--margin-10);
+  }
+  .banner_background_text_right_variation .banner_text_wrapper {
+    margin-right: var(--margin-10);
+  }
+  .banner_right_img_variation .banner_text_wrapper,
+  .banner_background_text_left_variation .banner_text_wrapper {
+    padding-left: var(--container-spacing);
+    margin-left: var(--container-spacing);
+  }
+  .banner_left_img_variation .imageright_component,
+  .banner_right_img_variation .imageright_component {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main_heading {
+    margin-bottom: var(--margin-5);
+  }
+  .banner_btn {
+    margin: var(--margin-2) 0;
+  }
+  .banner_paragraph {
+    margin-top: var(--margin-5);
+    margin-bottom: var(--margin-5);
+  }
+  .banner_bg_img {
+    background-size: cover;
+  }
+  .banner_bg_img_section {
+    height: 100vh;
+  }
+  .banner_btn_flex {
+    flex-direction: row;
+    gap: var(--margin-4);
+  }
+  .imageright_component {
+    padding: 0px;
+  }
+  .banner_left_img_variation .banner_half_image,
+  .banner_right_img_variation .banner_half_image {
+    width: var(--width-full);
+  }
+  .banner_left_img_variation .banner_half_image img,
+  .banner_right_img_variation .banner_half_image img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .banner_bottom_img_variation .banner_btn_flex {
+    margin-top: var(--margin-5);
+  }
+  .banner_bottom_img_variation .bottom_banner_image {
+    aspect-ratio: 16 / 9;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .banner_paragraph {
+    margin-block: var(--margin-5);
+  }
+}

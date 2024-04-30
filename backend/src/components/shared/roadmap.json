@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_roadmaps",
+  "info": {
+    "displayName": "Roadmap",
+    "icon": "road",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "richtext",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

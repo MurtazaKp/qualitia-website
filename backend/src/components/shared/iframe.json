@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_iframes",
+  "info": {
+    "displayName": "Iframe",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "iframeSrc": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Without Header Footer",
+        "With Header Footer"
+      ],
+      "default": "Without Header Footer"
+    }
+  }
+}

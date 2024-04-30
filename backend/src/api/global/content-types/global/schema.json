@@ -1,0 +1,78 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Company Details",
+    "name": "global",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": true
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "copyRight": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "addresses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.address"
+    },
+    "headerScripts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "containers.embedded-scripts"
+    },
+    "bodyScripts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "containers.embedded-scripts"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-links"
+    },
+    "cookieBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "containers.cookie-banner"
+    }
+  }
+}

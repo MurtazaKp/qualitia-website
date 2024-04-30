@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_best_practices_details",
+  "info": {
+    "displayName": "Best Practices Details"
+  },
+  "options": {},
+  "attributes": {
+    "duration": {
+      "type": "string"
+    },
+    "complexity": {
+      "type": "enumeration",
+      "enum": [
+        "Advanced",
+        "Intermediate",
+        "Beginner"
+      ]
+    },
+    "participants": {
+      "type": "richtext"
+    }
+  }
+}

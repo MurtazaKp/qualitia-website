@@ -1,0 +1,61 @@
+/*Cubcast Episodes component start*/
+.cubcast_card_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.popular_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cubcast_card_color_light_blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6) var(--padding-8);
+  background-color: var(--cubcast_card_bg_light_blue);
+  color: var(--color-light);
+}
+.cubcast_card_color_sky_blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6) var(--padding-8);
+  background-color: var(--cubcast_card_bg_sky_blue);
+  color: var(--color-light);
+}
+.cubcast_card_color_pink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6) var(--padding-8);
+  background-color: var(--cubcast_card_bg_pink);
+  color: var(--color-light);
+}
+.popular_card {
+  margin: 0;
+}
+.resource_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: var(--margin-1);
+
+}
+@media screen and (min-width:576px) {
+  .resource_card {
+    margin-top: var(--margin-1);
+  } 
+}
+@media screen and (min-width:768px) {
+  .resource_card {
+    margin-top: 0;
+  } 
+}
+@media screen and (min-width:992px) {
+  .resource_card {
+    margin-top: var(--margin-1);
+  } 
+}

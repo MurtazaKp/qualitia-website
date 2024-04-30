@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_menu_resources",
+  "info": {
+    "displayName": "menuResources",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource.resource"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

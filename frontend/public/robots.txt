@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.cubyts.com
+
+# Sitemaps
+Sitemap: https://www.cubyts.com/sitemap.xml

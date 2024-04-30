@@ -1,0 +1,41 @@
+name: Yarn Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Create ENV File
+      run: |
+       echo "BACKEND_ENV=${{ secrets.BACKEND_ENV }}" > env_file
+       mv env_file backend/.env
+       
+    - name: Install Dependencies
+      run: cd backend && yarn install || true && yarn build && mv .env env_file
+
+    - name: Set up SSH key
+      uses: webfactory/ssh-agent@v0.5.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        port: ${{ secrets.SSH_PORT }}
+        project-dir: ${{ secrets.DIR }}
+
+    - name: RSYNC Backend folder to Server
+      run: |
+        rsync -avzm -e 'ssh -o StrictHostKeyChecking=no' -i <(echo "${{ secrets.SSH_PRIVATE_KEY }}") backend/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DIR }}
+    - name: SSH into server and deploy code
+      run: |
+        ssh -o StrictHostKeyChecking=no -i <(echo "${{ secrets.SSH_PRIVATE_KEY }}") ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} '
+          cd ${{ secrets.DIR }} && 
+          mv env_file .env &&
+          pm2 delete cubyts-api &&
+          pm2 start yarn --name "cubyts-api" -- develop 
+        '

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "securities",
+  "info": {
+    "singularName": "security",
+    "pluralName": "securities",
+    "displayName": "Security Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "containers.article-list",
+        "containers.compare-view",
+        "containers.integration-list",
+        "containers.resources",
+        "containers.roadmap",
+        "containers.subscribe",
+        "containers.tabs-list",
+        "containers.video-card",
+        "containers.paragraph",
+        "containers.next-previous-feature",
+        "containers.banners",
+        "containers.integrations-showcase",
+        "containers.security-list",
+        "containers.card-listing",
+        "containers.cubcast",
+        "containers.embedded-scripts",
+        "containers.fa-qs",
+        "containers.table-of-content-panel",
+        "containers.cta",
+        "containers.book-demo",
+        "containers.teams",
+        "containers.contact-form"
+      ]
+    }
+  }
+}
